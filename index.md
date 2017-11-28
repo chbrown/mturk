@@ -83,7 +83,7 @@ Then, back in the requester sandbox, find the submission you just created.
   {% for page in sorted_pages %}
     {% if page.title %}
       <li>
-        <h4><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h4>
+        <h4><a href="{{ page.url | relative_url | replace: ".html", "" }}">{{ page.title }}</a></h4>
         {{ page.summary }}
       </li>
     {% endif %}

@@ -88,4 +88,4 @@ MTurk is ephemeral; be sure to export your data systematically, since MTurk will
 
 # Next page
 
-Continue on to [Tips and Tricks]({% link tips-and-tricks.md %}) for strategies solving common problems with non-obvious solutions.
+Continue on to [Tips and Tricks]({{ "tips-and-tricks" | relative_url }}) for strategies solving common problems with non-obvious solutions.
