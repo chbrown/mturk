@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>@chbrown's MTurk notes{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+  <header>
+    <a href="https://github.com/chbrown"><code>@chbrown</code></a>'s
+    <a href="https://chbrown.github.io/mturk/">MTurk notes</a>
+  </header>
+  <nav>
+    <h3>Site Navigation</h3>
+    <ul>
+      {% assign sorted_pages = site.pages | sort: 'date' %}
+      {% for page in sorted_pages %}
+        {% if page.title %}
+          <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+  <article>
+    {% if page.title %}
+      <h1>{{ page.title }}</h1>
+    {% endif %}
+    {{ content }}
+  </article>
+  <footer>
+    <small>
+      Copyright ©2014–2017 Christopher Brown ·
+      Licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    </small>
+  </footer>
+</body>
