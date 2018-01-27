@@ -34,6 +34,41 @@ Tack on this at the end, in production, to require the Masters qualification:
       --qualification-requirements QualificationTypeId=2F1QJWKUDD8XADTFD2Q0G6UTO95ALH,Comparator=Exists
 
 
+## Conversions
+
+The `aws mturk` command line expects its time-based arguments to be in seconds.
+
+Here's a reference with some standard timing amounts.
+
+| Seconds | Description |
+|--------:|:------------|
+| 2419200 | 4 weeks     |
+| 1814400 | 3 weeks     |
+| 1209600 | 2 weeks     |
+|  604800 | 1 week      |
+|  518400 | 6 days      |
+|  432000 | 5 days      |
+|  345600 | 4 days      |
+|  259200 | 3 days      |
+|  172800 | 2 days      |
+|   86400 | 1 day       |
+|   64800 | 18 hours    |
+|   43200 | 12 hours    |
+|   21600 | 6 hours     |
+|   14400 | 4 hours     |
+|   10800 | 3 hours     |
+|    7200 | 2 hours     |
+|    5400 | 90 minutes  |
+|    3600 | 1 hour      |
+|    2700 | 45 minutes  |
+|    1800 | 30 minutes  |
+|     900 | 15 minutes  |
+|     600 | 10 minutes  |
+|     300 | 5 minutes   |
+|     120 | 2 minutes   |
+|      60 | 1 minute    |
+
+
 ## `aws mturk` man pages
 
 <!-- aws mturk <subcommand> help | fmt -s -w 9999 | sed 's/- //g' | tr -s $\n -->
