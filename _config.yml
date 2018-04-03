@@ -32,6 +32,12 @@ kramdown:
 # customizations
 
 exclude:
+  - README.md
+  # defaults:
   - Gemfile
   - Gemfile.lock
-  - README.md
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby

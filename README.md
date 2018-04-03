@@ -7,7 +7,7 @@ View this site at <https://chbrown.github.io/mturk/>
 
 Install build tools (only need to run this once):
 
-    bundle install
+    bundle install --path vendor/bundle
 
 Render the site locally:
 
