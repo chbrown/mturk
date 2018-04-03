@@ -5,9 +5,12 @@ View this site at <https://chbrown.github.io/mturk/>
 
 ## Development
 
-To render this site locally, run:
+Install build tools (only need to run this once):
 
-    # bundle install # <-- only need to run this once
+    bundle install
+
+Render the site locally:
+
     bundle exec jekyll serve --watch --incremental
 
 And then go to <http://localhost:4000>
