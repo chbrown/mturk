@@ -136,3 +136,18 @@ Here's a reference with some standard timing amounts.
 * `--hit-layout-parameters` (list)
   If the HITLayoutId is provided, any placeholder values must be filled in with values using the HITLayoutParameter structure.
   For more information, see HITLayout.
+
+
+### Qualifications
+
+Reference: [API - Data Structures - QualificationRequirement](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html)
+
+There are several "system" (built-in) qualifications:
+
+| Name | Production | Sandbox (if ≠ Production) |
+|:-----|:-----------|:--------------------------|
+| Masters | 2F1QJWKUDD8XADTFD2Q0G6UTO95ALH | 2ARFPLSP75KLA8M8DH1HTEQVJT3SY6
+| `Worker_NumberHITsApproved` | 00000000000000000040
+| `Worker_Locale` | 00000000000000000071 |
+| `Worker_Adult` | 00000000000000000060 |
+| `Worker_PercentAssignmentsApproved` (integer between 0 and 100) | 000000000000000000L0 |
